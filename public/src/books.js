@@ -1,10 +1,11 @@
 function findAuthorById(authors, id) {
-  return authors.find((author) => id === author.id)
+  const matches = authors.filter((author) => id === author.id);
+  return matches.length ? matches[0] : undefined;
 }
 
-
 function findBookById(books, id) {
-  return books.find((book) => id === book.id)
+  const matches = books.filter((book) => id === book.id);
+  return matches.length ? matches[0] : undefined;
 }
 
 // NOTE: YOU DON'T HAVE TO EDIT THE FUNCTIONS BELOW
